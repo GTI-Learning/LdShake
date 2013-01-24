@@ -18,5 +18,5 @@ is licensed under a Creative Commons Reconocimiento-NoComercial-CompartirIgual 3
     http://dx.doi.org/10.1016/j.compedu.2011.06.016
 
     Hernández-Leo, D., Carralero, M.A., Chacón, J., Pérez-Sanagustín, M., Carrió, M., Blat, J., Sharing and co-editing learning design solutions, European LAMS & Learning Design Conference, Oxford, UK, 15-16 July 2010, pp. 20-23
-    Abstract: http://lams2010.lamsfoundation.org/abstract.htm#a9 | 
+    Abstract: http://lams2010.lamsfoundation.org/abstract.htm#a9 
     Slides: http://www.slideshare.net/davinia.hl/ldshakelams2010?from=ss_embed
