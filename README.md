@@ -3,6 +3,9 @@
 LdShake is a platform for the social sharing and co-edition of learning designs
 http://ldshake.upf.edu
 
+The complete LdShake package can be downloaded at:
+http://sourceforge.net/projects/ldshake/files/LdShakev1.tar.bz2/download
+
 =======
 
 Scientific publications: 
