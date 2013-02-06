@@ -186,7 +186,7 @@
 		}
 		
 		#footer-logos {
-			height: 64px;
+			height: 66px;
 			width: 824px;
 			float: left;
 		}

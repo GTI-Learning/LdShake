@@ -2187,7 +2187,7 @@ div.ajax_loader {
 }
 
 #footer-logos {
-	height: 64px;
+	height: 66px;
 	/*width: 524px;*/
 	float: left;
 	background-color: #fff;
