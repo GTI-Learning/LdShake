@@ -108,4 +108,4 @@ The open source project site can be found at http://elgg.org/
 Elgg 1.2 is released under the GNU Public License (GPL), which
 is supplied in this distribution as LICENSE.
 
-For installation instructions, please see the INSTALL file.
+

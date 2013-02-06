@@ -1185,7 +1185,6 @@ SQL;
 
     }
 
-
     public static function getUserViewableLdSs($user_id, $count = false, $limit = 0, $offset = 0, $mk = null, $mv = null) {
         global $CONFIG;
 
@@ -1195,7 +1194,7 @@ SQL;
                 if($count)
                     return get_entities_from_metadata($mk, $mv, 'object', 'LdS', 0, $query_limit, $offset, '', 0, true);
 
-                return get_entities('object', 'LdS', 0, $query_limit, $offset);
+                return get_entities_from_metadata($mk, $mv, 'object', 'LdS', 0, $query_limit, $offset, '', 0);
             }
 
             $query_limit = ($limit == 0) ? '' : "9999";
@@ -1216,14 +1215,14 @@ SQL;
             $mv_id = get_metastring_id($mv);
 
             //$mj = "JOIN metadata m ON e.guid = m.entity_guid";
-            $mw = "m.name_id='{$mk_id}' AND  m.value_id='{$mv_id}' AND";
+            $mw = "md.name_id='{$mk_id}' AND  md.value_id='{$mv_id}' AND";
         }
 
         $acv_k = get_metastring_id("all_can_view");
         $acv_v = get_metastring_id("yes");
 
         $query = <<<SQL
-SELECT DISTINCT e.guid, e.type FROM {$CONFIG->dbprefix}entities e JOIN metadata m ON e.guid = m.entity_guid WHERE {$mw} e.type = 'object' AND e.subtype = $subtype AND e.enabled = 'yes' AND (
+SELECT DISTINCT e.guid, e.type FROM {$CONFIG->dbprefix}entities e JOIN metadata m ON e.guid = m.entity_guid JOIN metadata md ON e.guid = md.entity_guid WHERE {$mw} e.type = 'object' AND e.subtype = $subtype AND e.enabled = 'yes' AND (
 	(e.owner_guid = {$user_id})
 	OR
 	(

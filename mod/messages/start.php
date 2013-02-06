@@ -49,7 +49,8 @@
 				
 			// Register a URL handler for shouts posts
 				register_entity_url_handler('messages_url','object','messages');
-				
+                register_entity_url_handler('messages_url','object','sent_messages');
+
 	        // Extend hover-over and profile menu	
 				extend_view('profile/menu/links','messages/menu');
 				
