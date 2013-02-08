@@ -9,12 +9,6 @@
             <li><a href="http://ldshake.upf.edu" target="_blank"><img src="<?php echo $url ?>_graphics/powered-by-ldshake.png" alt="<?php echo T("Powered by LdShake") ?>" /></a></li>
 		</ul>
 	</div>
-	<div id="footer-contents">
-		<ul class="links">
-			<li><a href="<?php echo $url ?>pg/about/"><?php echo T("About this site") ?></a></li>
-		</ul>
-		<div class="acknowledgements"><?php echo T("This work has been partially funded by the Project Learn3 (TIN2008-05163/TSI) from the Ministry of Science and Innovation.") ?></div>
-	</div>
 	<div class="clearfloat"></div>
 </div><!-- /#layout_footer -->
 
