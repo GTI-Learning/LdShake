@@ -137,7 +137,7 @@ function ldshakers_exec_group ($params)
 	$vars['section'] = 'group';
 	$offset = get_input('offset') ?: '0';
 	
-	$ldshakers = $group->getMembers();
+	$ldshakers = $group->getMembers(9999);
 	@Utils::osort($ldshakers, name);
 	$vars['ldshakers'] = $ldshakers;
 	

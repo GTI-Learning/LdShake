@@ -76,7 +76,7 @@ SQL;
                 $data->site_guid = $g->site_guid;
                 $data->canEdit = $g->canEdit();
 
-                $n = $g->getMembers();
+                $n = $g->getMembers(9999);
                 if($n) {
                     $data->nMembers = count($n);
                 } else
