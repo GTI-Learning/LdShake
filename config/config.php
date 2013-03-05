@@ -51,17 +51,17 @@ $confOptions = array (
 	'dbname' =>		array (
 						'devel' =>		'ldshake_trunk',
 						'staging' =>	'ldshake',
-						'prod' =>		''
+						'prod' =>		'ldshake'
 					),
 	'dbuser' =>		array (
-						'devel' =>		'root',
+						'devel' =>		'user',
 						'staging' =>	'user',
-						'prod' =>		'root'
+						'prod' =>		'user'
 					),
 	'dbpass' =>		array (
-						'devel' =>		'a7',
+						'devel' =>		'pass',
 						'staging' =>	'pass',
-						'prod' =>		'a7'
+						'prod' =>		'pass'
 					),
 	/**
 	 * Do your LdShake tables have any prefix? This is useful if you put them in an existing db,
@@ -142,7 +142,7 @@ $confPaths = array (
 	 */	
 	'dataroot' =>	array (
 						'devel' =>		'/var/lib/ldshake/',
-						'staging' =>	'G:/editors-data/',
+						'staging' =>	'/var/lib/ldshake/',
 						'prod' =>		'/var/lib/ldshake/'
 					),
 
@@ -187,7 +187,7 @@ $confPaths = array (
 							),		
 							
 	/**
-	 * Location of the ZIP tool
+	 * Location of the zip tool
 	 */
 	'zip_path' => array (
 						'devel' =>		'zip',
