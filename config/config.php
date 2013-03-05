@@ -30,7 +30,7 @@ ProxyPassReverse /exelearning http://127.0.0.1:8080/
  * List of environments, containing the regular expression of the server name that defines them.
  */
 $envUrls = array (
-	'devel' =>		'^localhost|^127\.0\.0\.1',
+	'devel' =>		'^localhost|^127\.0\.0\.1,|^web\.dev',
 	'staging' =>	'^ldshake3\.upf\.edu',
 	'prod' =>		'^ldshake\.upf\.edu'
 );
@@ -49,19 +49,19 @@ $confOptions = array (
 						'prod' =>		'localhost'
 					),
 	'dbname' =>		array (
-						'devel' =>		'ldshake',
+						'devel' =>		'ldshake_trunk',
 						'staging' =>	'ldshake',
-						'prod' =>		'ldshake'
+						'prod' =>		''
 					),
 	'dbuser' =>		array (
-						'devel' =>		'user',
+						'devel' =>		'root',
 						'staging' =>	'user',
-						'prod' =>		'user'
+						'prod' =>		'root'
 					),
 	'dbpass' =>		array (
-						'devel' =>		'pass',
+						'devel' =>		'a7',
 						'staging' =>	'pass',
-						'prod' =>		'pass'
+						'prod' =>		'a7'
 					),
 	/**
 	 * Do your LdShake tables have any prefix? This is useful if you put them in an existing db,
@@ -169,7 +169,7 @@ $confPaths = array (
 					),
 	
 	/**
-	 * HTML previews of WebCOllage & eXe
+	 * HTML previews of WebCollage & eXe
 	 */
 	'editors_content' => array (
 						'devel' =>		'/var/www/ldshake/',
